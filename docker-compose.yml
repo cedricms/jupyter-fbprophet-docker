@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  jupyter-fbprophet-docker:
+    build: .
+    image: jupyter-fbprophet-docker
+    volumes:
+      - ".:/home/notebooks"  # This is different from usual
+    ports:
+      - 8888:8888
